@@ -1,16 +1,29 @@
-body, html {
-    background: black;
+:root {
+    --red: #e63946;
+    --off-white: #f1faee;
+    --light-blue: #a8dadc;
+    --blue: #457b9d;
+    --navy: #1d3557;
 }
 
-canvas {
+body, html {
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    height: 100vw;
+    width: 100%;
 }
 
-container {
+canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
     width: 600px;
     height: 600px;
     background-color: aquamarine;
