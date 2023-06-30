@@ -7,7 +7,8 @@
 }
 
 body, html {
-    background: white;
+    background: var(--off-white);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +17,11 @@ body, html {
     width: 100%;
 }
 
-canvas {
+.header {
+    color: var(--navy);
+
+}
+.canvas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +29,26 @@ canvas {
 
 .container {
     display: flex;
+    flex-direction: column;
     width: 600px;
     height: 600px;
-    background-color: aquamarine;
+    background-color: var(--red);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    flex: 1;
+}
+
+.row {
+    background-color: var(--navy);
+    display: flex;
+    flex: 1;
+}
+
+.button {
+    background-color: --var(--light-blue);
+    flex: 1;
 }
