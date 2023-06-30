@@ -1,0 +1,17 @@
+body, html {
+    background: black;
+}
+
+canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+container {
+    width: 600px;
+    height: 600px;
+    background-color: aquamarine;
+}
