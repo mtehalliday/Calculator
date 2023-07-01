@@ -60,10 +60,14 @@ div.row {
 }
 
 div.button {
+    display: flex;
     background-color: var(--navy);
     flex: 1;
     border: 2px solid var(--red);
     height: 100%;
     border-radius: 8px;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    color: var(--off-white);
+    font-size: 48px;
 }
