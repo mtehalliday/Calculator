@@ -35,23 +35,31 @@ body, html {
     justify-content: center;
     align-items: center;
     width: 600px;
-    height: 600px;
+    height: 640px;
     background-color: var(--red);
     border-radius: 8px;
+    padding: 6px;
 
 }
 
 div.display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 60px;
+    padding-right: 20px;
+    overflow: hidden;
     flex: 1;
-    width: 95%;
+    width: 90%;
     height: auto;
     background-color: var(--light-blue);
     border: 14px solid var(--red);
     border-radius: 24px;
+    color: var(--navy);
 }
 
 div.row {
-    background-color: var(--navy);
+    background-color: var(--red);
     display: flex;
     flex: 1;
     justify-content: space-around;
