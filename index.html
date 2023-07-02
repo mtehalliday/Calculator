@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="calc.js" defer></script>
 </head>
 <body>
     <div class="header"><h1>Calculator</h1>
@@ -13,28 +14,28 @@
         <div class="container">
             <div class="display">327</div>
             <div class="row">
-                <button class="button num" value="7">7</button>
-                <button class="button num" value="8">8</button>
-                <button class="button num" value="9">9</button>
-                <button class="button op" value="divide">&#247</button>
+                <button class="num" value="7">7</button>
+                <button class="num" value="8">8</button>
+                <button class="num" value="9">9</button>
+                <button class="op" value="divide">&#247</button>
             </div>
             <div class="row">
-                <button class="button num" value="4">4</button>
-                <button class="button num" value="5">5</button>
-                <button class="button num" value="6">6</button>
-                <button class="button op" value="multiply">&#215</button>
+                <button class="num" value="4">4</button>
+                <button class="num" value="5">5</button>
+                <button class="num" value="6">6</button>
+                <button class="op" value="multiply">&#215</button>
             </div>
             <div class="row">
-                <button class="button num" value="1">1</button>
-                <button class="button num" value="2">2</button>
-                <button class="button num" value="3">3</button>
-                <button class="button op" value="add">+</button>
+                <button class="num" value="1">1</button>
+                <button class="num" value="2">2</button>
+                <button class="num" value="3">3</button>
+                <button class="op" value="add">+</button>
             </div>
             <div class="row">
-                <button class="button num" value="0">0</button>
-                <button class="button" value="clear">AC</button>
-                <button class="button" value="equals">=</button>
-                <button class="button op" value="subtract">-</button>
+                <button class="num" value="0">0</button>
+                <button value="clear">AC</button>
+                <button id="equals" value="equals">=</button>
+                <button class="op" value="subtract">-</button>
             </div>
         </div>
     </div>
