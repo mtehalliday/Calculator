@@ -1,5 +1,5 @@
 const numbers = document.querySelectorAll("button.num");
-const test = document.querySelector("#equals");
+const equals = document.querySelector("#equals");
 const display = document.querySelector(".display");
 const ac = document.querySelector("#clear");
 const operators = document.querySelectorAll("button.op")
@@ -7,7 +7,7 @@ const operators = document.querySelectorAll("button.op")
 
 
 function add(x, y) {
-    return x + y;
+    return Number(x) + Number(y);
 }
 
 function subtract(x, y) {
@@ -29,16 +29,16 @@ let operator = "";
 function operate(num1, num2, operator){
     switch (operator) {
         case "add":
-            add(num1, num2);
+            return add(num1, num2);
             break;
         case "subtract":
-            subtract(num1, num2);
+            return subtract(num1, num2);
             break;
         case "multiply":
-            multiply(num1, num2);
+            return multiply(num1, num2);
             break;
         case "divide":
-            divide(num1, num2);
+            return divide(num1, num2);
             break;
     }
 }
@@ -67,11 +67,17 @@ operators.forEach((op) => {
     op.addEventListener("click", function(e) {
         operator = e.target.value;
         num1 = input;
-        input = "";
+        clearDisplay();
     })
 })
 
-
+equals.addEventListener("click", function(e) {
+    num2 = input;
+    let output = operate(num1, num2, operator);
+    console.log(output);
+    displayInput(output);
+    input = "";
+});
 
 ac.addEventListener("click", clearDisplay);
 
@@ -83,4 +89,4 @@ ac.addEventListener("click", clearDisplay);
 //    })
 //}
 
-test.addEventListener("click", () => console.log("fixed"));
+

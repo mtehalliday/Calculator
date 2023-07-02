@@ -34,7 +34,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    width: 400px;
     height: 640px;
     background-color: var(--red);
     border-radius: 8px;
@@ -46,7 +46,7 @@ div.display {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 60px;
+    font-size: 70px;
     padding-right: 20px;
     overflow: hidden;
     flex: 1;
