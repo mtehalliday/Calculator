@@ -1,6 +1,8 @@
 const numbers = document.querySelectorAll("button.num");
 const test = document.querySelector("#equals");
 const display = document.querySelector(".display");
+const ac = document.querySelector("#clear");
+const operators = document.querySelectorAll("button.op")
 
 
 
@@ -48,6 +50,11 @@ function displayInput(input) {
     display.textContent = input;
 }
 
+function clearDisplay(){
+    display.textContent = "";
+    input = "";
+}
+
 
 numbers.forEach((num) => {
     num.addEventListener("click", function(e) {
@@ -56,7 +63,17 @@ numbers.forEach((num) => {
     });
 });
 
-console.log(input);
+operators.forEach((op) => {
+    op.addEventListener("click", function(e) {
+        operator = e.target.value;
+        num1 = input;
+        input = "";
+    })
+})
+
+
+
+ac.addEventListener("click", clearDisplay);
 
 
 
