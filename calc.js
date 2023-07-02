@@ -1,3 +1,6 @@
+const numbers = document.querySelectorAll("div.num");
+
+
 
 function add(x, y) {
     return x + y;
@@ -15,9 +18,9 @@ function divide(x,y) {
     return x / y;
 }
 
-let num1 = 0;
-let num2 = 0;
-let operator = "add";
+let num1 = null;
+let num2 = null;
+let operator = "";
 
 function operate(num1, num2, operator){
     switch (operator) {
@@ -34,4 +37,14 @@ function operate(num1, num2, operator){
             divide(num1, num2);
             break;
     }
+}
+
+let input = "";
+
+console.log(numbers)
+
+for (let i = 0; i < numbers.length; i++){
+    numbers[i].addEventListener("click", function(e) {
+        console.log(e);
+    })
 }

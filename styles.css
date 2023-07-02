@@ -50,11 +50,11 @@ div.display {
     padding-right: 20px;
     overflow: hidden;
     flex: 1;
-    width: 90%;
+    width: 92%;
     height: auto;
     background-color: var(--light-blue);
-    border: 14px solid var(--red);
-    border-radius: 24px;
+    border: 10px solid var(--red);
+    border-radius: 4px;
     color: var(--navy);
 }
 
@@ -65,6 +65,7 @@ div.row {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    margin: 1px;
 }
 
 div.button {
@@ -78,4 +79,5 @@ div.button {
     align-items: center;
     color: var(--off-white);
     font-size: 48px;
+    margin: 1px;
 }
